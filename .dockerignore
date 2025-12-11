@@ -1,0 +1,20 @@
+# Ignore dependencies (Let Docker install its own Linux versions)
+node_modules
+apps/*/node_modules
+packages/*/node_modules
+
+# Ignore build artifacts
+dist
+build
+.next
+
+# Ignore git history (Reduces build size massively)
+.git
+
+# Ignore secrets (Never bake these into the image layer)
+.env
+.env.local
+
+# Misc
+.DS_Store
+*.log

@@ -1,0 +1,30 @@
+{
+  "name": "@generative-station/worker",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "build": "tsc -p .",
+    "start": "node dist/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "@aws-sdk/client-s3": "^3.948.0",
+    "@generative-station/types": "workspace:^1.0.0",
+    "dotenv": "^17.2.3",
+    "pg": "^8.16.3",
+    "redis": "^5.10.0"
+  },
+  "devDependencies": {
+    "@types/node": "^25.0.0",
+    "@types/pg": "^8.16.0",
+    "@types/redis": "^4.0.11",
+    "tsx": "^4.0.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3"
+  }
+}
